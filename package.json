@@ -1,0 +1,33 @@
+{
+    "name": "bookshelf-backend",
+    "version": "1.0.0",
+    "description": "BookShelf API",
+    "main": "./dist/index.js",
+    "scripts": {
+        "build": "babel ./src -d ./dist",
+        "dev": "nodemon --exec babel-node ./src/index.js",
+        "start": "node ./dist/index.js"
+    },
+    "author": "fhrii",
+    "license": "MIT",
+    "dependencies": {
+        "@hapi/hapi": "^20.1.4",
+        "directory-import": "^2.3.0",
+        "dotenv": "^10.0.0",
+        "nanoid": "^3.1.23"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.14.5",
+        "@babel/core": "^7.14.6",
+        "@babel/node": "^7.14.7",
+        "@babel/plugin-transform-runtime": "^7.14.5",
+        "@babel/preset-env": "^7.14.7",
+        "cross-env": "^7.0.3",
+        "eslint": "^7.29.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-prettier": "^3.4.0",
+        "nodemon": "^2.0.7"
+    }
+}
